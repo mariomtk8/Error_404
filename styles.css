@@ -1,4 +1,10 @@
+@font-face {
+    font-family: 'fuente1'; /* Nombre personalizado para la fuente */
+    src: url('fuente1.ttf') format('ttf'); /* URL de la fuente y su formato */
+    /* Otras propiedades de fuente opcionales, como weight y style, pueden ir aquí */
+}
 body {
+    font-family: 'fuente1';
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -6,6 +12,7 @@ body {
 }
 
 header {
+    font-family: 'fuente1';
     text-align: center;
     padding: 20px;
     font-size: 24px;
@@ -27,11 +34,17 @@ header {
 
         .container {
             display: flex; /* Utilizamos flexbox para dividir la pantalla */
-            height: 100vh; /* Ocupa toda la altura de la pantalla */
+            height: 15vh; /* Ocupa toda la altura de la pantalla */
         }
-
+        .texto1{
+            margin-top: 6%;
+        }
+        .texto2{
+            margin-top: 6%;
+        }
         /* Estilo del primer lado */
         .left-side {
+            
             flex: 1; /* Ocupa la mitad del espacio disponible */
             background-color: #3498db; /* Color azul */
             color: white;
