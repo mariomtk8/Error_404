@@ -24,3 +24,34 @@ header {
         background-position: 200% center;
     }
 }
+
+.container {
+    display: flex; /* Utilizamos flexbox para dividir la pantalla */
+    height: 100vh; /* Ocupa toda la altura de la pantalla */
+}
+
+/* Estilo del primer lado */
+.left-side {
+    flex: 1; /* Ocupa la mitad del espacio disponible */
+    background-color: #3498db; /* Color azul */
+    color: white;
+    text-align: center;
+}
+
+/* Estilo del segundo lado */
+.right-side {
+    flex: 1; /* Ocupa la mitad del espacio disponible */
+    background-color: #e74c3c; /* Color rojo */
+    color: white;
+    text-align: center;
+}
+
+main {
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.eclipse-luna {
+    padding: 20px;
+    background-color: #eee;
+}
