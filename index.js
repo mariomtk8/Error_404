@@ -5,7 +5,7 @@ function getRandomNumber(min, max) {
 function generateRandomURL(){
   // Set up the NASA API endpoint and your API key
   var randomYear = getRandomNumber(2000, 2022);
-  var randomUrl = "https://api.nasa.gov/planetary/apod?api_key=bhGLnskGIagCqeYjcFUajoAPs4l87DLGtQQjhUUd&date="+ randomYear + "-01-28";
+  var randomUrl = "https://api.nasa.gov/planetary/apod?api_key=bhGLnskGIagCqeYjcFUajoAPs4l87DLGtQQjhUUd&date="+ randomYear + "-01-28  ";
   console.log(randomUrl);
   return randomUrl;
 }
