@@ -1,8 +1,14 @@
 body {
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    background-color: black;
+    overflow-x: hidden;
+    background-image: url(https://media.istockphoto.com/id/1194080385/es/v%C3%ADdeo/4k-video-footage-motion-of-shinny-stars-animation-on-black-background-bucle-de-efecto-de.jpg?b=1&s=640x640&k=20&c=WyxKefyIFjRMveXgnLba-qaGqeqxdy9fxnb2EIeIQiw=);
+    color: white;
+    margin-left: 5vh;
+    margin-right: 5vh;
+}
+body img{
+    background-repeat: repeat;
 }
 
 header {
@@ -11,7 +17,7 @@ header {
     font-size: 30px;
     font-weight: bold;
     color: #ffffff;
-    background-image: linear-gradient(to right, #7444a8, #c72666, #34388a, #121212);
+    background-image: linear-gradient(to right, #7444a888, #c7266685, #34388a92, #1212127d);
     background-size: 200% auto;
     animation: gradientAnimation 5s linear infinite;
 }
@@ -25,24 +31,173 @@ header {
     }
 }
 
-main {
+nav{
+    margin: 15px;
+    color: white;
+}
+
+
+.eclipse-list {
+    list-style-type: disc; 
+    padding: 0;
+}
+
+.eclipse-list li {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.white-box {
+    background-color: #ffffff4b; 
+    border-radius: 10px; 
+    width: 80%; 
+    margin: 20px auto; 
+    padding: 20px; 
     display: flex;
-    justify-content: space-around;
-    padding: 20px;
+    justify-content: center; 
+    align-items: center;
 }
 
-.contenido {
-    background-color: #d3e0ea; /* Azul claro */
-    padding: 20px;
-    margin: 10px;
+main{
+    display: flex;
     text-align: center;
+    width: 100%;
+    flex-direction: column;
 }
 
-h2 {
-    color: #4a90e2; /* Azul brillante */
+.up{
+    flex:1;
+  }
+  .up h1{
+    font-size: xx-large;
+  }
+  .up p{
+    font-size: larger;
+  }
+
+  .dwn{
+    flex:1;
+  }
+
+  .dwn img{
+    width: 500px;
+    border-radius: 30px;
+  }
+
+  article{
+    display: flex;
+    margin-top: 5vh;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .izq1{
+    flex:1;
+  }
+  .izq1 h1{
+    font-size: xx-large;
+  }
+  .izq1 p{
+    font-size: larger;
+  }
+
+  .dra1{
+    flex:1;
+  }
+
+  .dra1 img{
+    width: 500px;
+    border-radius: 20px;
+  }
+
+  section{
+    display: flex;
+    margin-top: 5vh;
+    align-items: center;
+    text-align: center;
+  }
+
+  .izq2{
+    flex:1;
+  }
+  .izq2 img{
+    width: 500px;
+    border-radius: 20px;
+  }
+  .dra2{
+    flex:1;
+  }
+  .dra2 h1{
+    font-size: xx-large;
+  }
+  .dra2 p{
+    font-size: larger;
+  }
+
+  footer {
+    background-color: #fdfdfd8f; /* Color de fondo del footer */
+    color: white; /* Color de texto del footer */
+    text-align: center;
+    padding: 10px;
+    margin-top: 8vh;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
+.widget{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.widget h2{
+    margin-bottom: 9vh;
+}
+.widget input{
+    margin-top: 4vh;
+}
+.album-item img{
+    width: 400px;
+    height: 400px;
+}
+
+
+
+.rocket-container {
+    position: relative;
+    width: 100px; 
+    height: 100px; 
+    animation: moveRocket 10s linear infinite; 
+}
+
+/* Estilos para el cohete */
+.rocket {
+    position: absolute;
+    width: 150%; /* Ancho del cohete */
+    height: 100%; /* Alto del cohete */
+    animation: rocketHover 0.5s ease infinite alternate; /* Animación de balanceo */
+}
+
+/* Animación de movimiento de izquierda a derecha */
+@keyframes moveRocket {
+    0% {
+        left: 0;
+    }
+    50% {
+        left: calc(100% - 100px); /* Desplaza el cohete hacia la derecha */
+        transform: rotate(5deg); /* Rota el cohete mientras se mueve */
+    }
+    100% {
+        left: 0;
+    }
+}
+
+/* Animación de balanceo del cohete */
+@keyframes rocketHover {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px); /* Simula un ligero balanceo hacia arriba */
+    }
 }
